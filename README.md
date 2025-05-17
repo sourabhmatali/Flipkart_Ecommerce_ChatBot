@@ -75,11 +75,11 @@ pip install -r requirements.txt
 🔐 Environment Variables
 Create a .env file and add:
 
-GOOGLE_API_KEY=your_google_key
-GROQ_API_KEY=your_groq_key
-ATRA_DB_API_ENDPOINT=your_Astra_db_end_point_key
-ASTRA_DB_APPLICATION_TOKEN=Astra_db_application_token_key
-ASTRA_DB_KEYSPAC=Astra_db_keyspace_key
+GOOGLE_API_KEY=your_google_key,
+GROQ_API_KEY=your_groq_key,
+ATRA_DB_API_ENDPOINT=your_Astra_db_end_point_key,
+ASTRA_DB_APPLICATION_TOKEN=Astra_db_application_token_key,
+ASTRA_DB_KEYSPAC=Astra_db_keyspace_key,
 
 🏃‍♂️ Running the App
 Start the API server using:
