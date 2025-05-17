@@ -88,7 +88,7 @@ uvicorn main:app --reload
 Then open your browser and go to: http://localhost:8000/docs
 
 🔄 Workflow
-Scraping: Collect product reviews using the Flipkart scraper
+Scraping: Collect product reviews using the Flipkart dataset
 
 Embedding: Convert documents to vector space
 
@@ -110,3 +110,36 @@ Make changes and commit
 
 Open a Pull Request
 
+
+
+└── customer_support_rag/
+    ├── README.md
+    ├── main.py                    # FastAPI application entry point
+    ├── pyproject.toml             # Project metadata and dependencies
+    ├── requirements.txt           # Project dependencies
+    ├── uv.lock                    # UV lock file
+    ├── .python-version            # Python version specification
+    ├── config/                    # Configuration files
+    │   └── config.yaml
+    ├── data/                      # Data files
+    │   └── flipkart_product_review.csv
+    ├── logs/                      # Log files
+    ├── notebook/                  # Jupyter notebooks for experimentation
+    │   └── customer_service_bot.ipynb
+    ├── rag/                       # Core RAG modules
+    │   ├── __init__.py
+    │   ├── constant/
+    │   ├── data_ingestion/
+    │   ├── exception/
+    │   ├── logging/
+    │   ├── model_loaders/
+    │   ├── model_with_memory/
+    │   ├── prompts/
+    │   └── retriever/
+    ├── static/                    # Static assets for web interface
+    │   └── style.css
+    ├── templates/                 # HTML templates
+    │   └── chat.html
+    └── utils/                     # Utility functions
+        ├── __init__.py
+        └── config.py
