@@ -1,8 +1,12 @@
+
+#  FLIPKART_ECOMMERCE_CHATBOT
+
 🤖 Customer Support System using RAG
 A customer support chatbot powered by Retrieval-Augmented Generation (RAG) that leverages custom data and LLMs to deliver accurate, context-rich responses for product-related queries.
 
 📋 Project Overview
 This project implements an end-to-end RAG-based system for customer support. It includes data scraping, vector-based retrieval, and dynamic response generation using LLMs with customized prompts.
+## Features
 
 ✨ Features
 🔍 Natural language question handling
@@ -14,6 +18,8 @@ This project implements an end-to-end RAG-based system for customer support. It 
 🔧 Configurable via YAML settings
 
 🧹 Modular pipeline for scraping, embedding, and serving
+
+## Tech Stack
 
 🛠️ Tech Stack
 Python: Core programming language
@@ -32,25 +38,9 @@ Conda/venv: Environment management
 
 DataBase:AstraDB
 
-📁 Project Structure
-CUSTOMER_SUPPORT_SYSTEM/
-├── main.py                         # API entry point
-├── test.py                         # Test script
-├── requirements.txt                # Python dependencies
-├── setup.py                        # Package setup (if needed)
-├── .env                            # Environment variables (API keys etc.)
-├── config/
-│   ├── config.yaml                 # Configurations (API keys, paths)
-│   └── config_loader.py            # Loader for config
-├── prompt_library/
-│   └── prompt.py                   # Prompt design and templates
-├── data_collection_pipeline/
-│   └── flipkart_scrapper.py       # Web scraper for product reviews
-├── retriever/
-│   └── retrieval.py               # Vector search and document retrieval
-├── utils/
-│   └── model_loader.py            # Load LLM and embeddings
-└── README.md                       # Project documentation
+
+## Deployment
+
 
 🚀 Setup & Installation
 🔧 Prerequisites
@@ -59,6 +49,11 @@ Python 3.9+
 Conda or virtual environment
 
 API keys for LLM providers (e.g., Google AI Studio, Groq)
+
+
+## Installation
+
+
 
 🔨 Installation Steps
 # Clone the repository
@@ -71,6 +66,10 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+    
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
 
 🔐 Environment Variables
 Create a .env file and add:
@@ -81,13 +80,20 @@ ATRA_DB_API_ENDPOINT=your_Astra_db_end_point_key,
 ASTRA_DB_APPLICATION_TOKEN=Astra_db_application_token_key,
 ASTRA_DB_KEYSPAC=Astra_db_keyspace_key,
 
+
+
+## Running Tests
+
+To run tests, run the following command
+
 🏃‍♂️ Running the App
 Start the API server using:
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8001
 
 Then open your browser and go to: http://localhost:8000/docs
 
-🔄 Workflow
+
+## 🔄 Workflow
 Scraping: Collect product reviews using the Flipkart dataset
 
 Embedding: Convert documents to vector space
@@ -97,7 +103,9 @@ Retrieval: Fetch relevant chunks using vector similarity
 Prompting: Use predefined prompt templates to generate answers
 
 Response: Serve the response via API
+## Contributing
 
+Contributions are always welcome!
 
 🤝 Contribution
 Want to improve this project?
