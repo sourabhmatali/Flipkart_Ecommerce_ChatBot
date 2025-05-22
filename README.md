@@ -1,5 +1,5 @@
 
-#  FLIPKART_ECOMMERCE_CHATBOT
+#  FLIPKART_ECOMMERCE_RAGCHATBOT
 
 🤖 Customer Support System using RAG
 A customer support chatbot powered by Retrieval-Augmented Generation (RAG) that leverages custom data and LLMs to deliver accurate, context-rich responses for product-related queries.
