@@ -38,6 +38,8 @@ Conda/venv: Environment management
 
 DataBase:AstraDB
 
+Cloud:Amazon AWS,ECR
+
 
 ## Deployment
 
